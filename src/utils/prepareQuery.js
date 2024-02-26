@@ -12,8 +12,6 @@ const prepareQueryParams = (str) => {
     return null;
   }
 
-  console.log('splitQueries', splitQueries);
-
   splitQueries.forEach((query, idx) => {
     const QUERY = `${searchFor}=${query}`
 
@@ -23,8 +21,6 @@ const prepareQueryParams = (str) => {
       queryStr = QUERY
     }
   })
-
-  console.log('queryStr', queryStr);
 
   return queryStr;
 }
