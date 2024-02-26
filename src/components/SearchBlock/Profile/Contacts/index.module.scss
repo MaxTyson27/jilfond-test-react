@@ -1,0 +1,14 @@
+@import '../../../../styles/vars';
+
+.wrap {
+  margin-bottom: 20px;
+
+  p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  strong {
+    font-weight: 600;
+    color: $title;
+  }
+}

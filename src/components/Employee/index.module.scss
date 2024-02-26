@@ -1,0 +1,50 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
+.employee-result {
+  display: flex;
+  align-items: stretch;
+  
+  max-width: 240px;
+  width: 100%;
+  min-height: 70px;
+
+  border-radius: 10px;
+  @extend %box-shadow;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &.active {
+    & .employee-result-body {
+      background-color: #E0E0E0;
+    }
+  }
+
+  h5 {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: $title;
+
+    word-break: break-all;
+  }
+
+  p {
+    word-break: break-all;
+  }
+
+  & .employee-result-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 5px 5px 5px 15px;
+  }
+
+}

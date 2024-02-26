@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.search-block {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  height: calc(100vh - 132px);
+
+  @extend %box-shadow;
+  border: 1px solid $main_border;
+}

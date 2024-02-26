@@ -1,0 +1,9 @@
+@import '../../../styles/vars';
+
+.search-panel {
+  padding: 27px 30px 15px 20px;
+
+  border-right: 1px solid $border;
+
+  overflow-y: scroll;
+}

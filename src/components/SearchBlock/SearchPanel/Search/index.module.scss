@@ -1,0 +1,9 @@
+@import '../../../../styles/mixins';
+
+.search {
+  margin-bottom: 30px;
+}
+
+.title {
+  @include title(14px);
+}

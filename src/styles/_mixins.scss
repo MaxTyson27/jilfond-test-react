@@ -1,0 +1,14 @@
+@import './vars';
+
+@mixin title($mb) {
+  color: $title;
+  font-weight: 600;
+  line-height: 140%;
+  font-size: 16px;
+
+  margin-bottom: $mb;
+}
+
+%box-shadow {
+  box-shadow: 0px 0px 10px 0px $shadow;
+}

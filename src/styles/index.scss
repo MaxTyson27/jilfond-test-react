@@ -1,0 +1,35 @@
+@import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  padding: 50px;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: $text;
+
+  background-color: $white;
+}
