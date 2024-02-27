@@ -16,21 +16,13 @@ const LABELS = {
 const DEBOUNCE_MS = 500;
 
 const Search = observer(() => {
-  const {
-    setSearchQuery,
-    searchQuery,
-    setLoading,
-    setError,
-    // selectEmployee uncomment if need clear profile on every change input event
-  } = store;
+  const { searchQuery } = store;
+  const { getEmployes } = service;
 
-  const debouncFn = useCallback(debounce(service.getEmployes, DEBOUNCE_MS), [])
+  const debouncFn = useCallback(debounce(getEmployes, DEBOUNCE_MS), [])
 
   const handleSearchEmployes = (value) => {
-    setSearchQuery(value);
-    setLoading(true);
-    setError(false);
-    // selectEmployee(null); uncomment if need clear profile on every change input event
+    service.handleSearchEmployes(value);
     debouncFn();
   }
 

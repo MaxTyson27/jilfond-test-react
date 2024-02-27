@@ -21,6 +21,13 @@ class Service {
     this.store.setLoading(false);
   }
 
+  handleSearchEmployes = (value) => {
+    this.store.setSearchQuery(value);
+    this.store.setLoading(true);
+    this.store.setError(false);
+    // this.store.selectEmployee(null) uncomment if need clear profile on every change input event
+  }
+
   getEmployes = async () => {
     try {
       if (!this.store.searchQuery) return this.resetEmployes()
